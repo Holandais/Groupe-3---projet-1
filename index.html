@@ -1,39 +1,86 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de l'association Avengers - actions et événements">
     <title>Projet 1 - Groupe 3 "Avengers"</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
     <header class="main">
         <div class="container">
-            <a href="index.html" class="logo"> Avengers </a>
-            <nav class="main-nav">
+            <a href="index.html" class="logo">Avengers</a>
+            <nav class="main-nav" aria-label="Navigation principale">
                 <ul class="links">
-                    <li><a href="index.html" class="active">Accueil</a></li>
-                    <li><a href="actions.html">Nos Actions</a></li>
+                    <li><a href="index.html" class="active" aria-current="page">Accueil</a></li>
+                    <li><a href="actions.html">Nos actions</a></li>
                     <li><a href="evenements.html">Événements</a></li>
-                    <li><a href="contact.html" class="bouton">Faire un Don</a></li>
+                    <li><a href="contact.html" class="bouton">Faire un don</a></li>
                 </ul>
             </nav>
         </div>
-
     </header>
 
-    <main>
-        <section class="hero-placeholder">
-            <h1>Bienvenue chez l'association Avengers</h1>
+    <main id="main-content">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1>Agir ensemble pour un impact local</h1>
+                    <p class="lead">Rejoignez nos actions, participez à des événements et soutenez nos projets solidaires.</p>
+                    <div class="hero-ctas">
+                        <a href="actions.html" class="btn btn-primary">Découvrir nos actions</a>
+                        <a href="contact.html" class="btn btn-secondary">Nous contacter</a>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-hidden="true">&nbsp;</div>
+            </div>
         </section>
+
+        <section class="features container">
+            <h2 class="section-title">Nos priorités</h2>
+            <div class="grid">
+                <article class="card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Solidarité</h3>
+                    <p>Accompagnement des familles et actions locales pour renforcer le lien social.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Écologie</h3>
+                    <p>Projets durables et ateliers de sensibilisation à l'environnement.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">🏫</div>
+                    <h3>Éducation</h3>
+                    <p>Ateliers, formations et soutien scolaire pour les jeunes du quartier.</p>
+                </article>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">
-        <div class="footer-container">
-            <p>&copy; 2026 Avengers. Tous droits réservés.</p>
-            <ul class="footer-links">
-                <li><a href="#mentions">Mentions Légales</a></li>
-            </ul>
+        <div class="footer-container container">
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo">Avengers</a>
+                <p class="muted">&copy; 2026 Avengers. Tous droits réservés.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Liens rapides</h4>
+                <ul class="footer-links">
+                    <li><a href="actions.html">Nos actions</a></li>
+                    <li><a href="evenements.html">Événements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p class="muted">contact@avengers.example</p>
+                <p class="muted">+33 1 23 45 67 89</p>
+            </div>
         </div>
     </footer>
 </body>
