@@ -234,3 +234,221 @@ ul {
         padding: 60px 20px;
     }
 }
+
+/*====================== Stylisation de la page Evènement PAR TONY BERENGER ==========================*/
+
+.evenements {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 6rem;
+}
+
+.en-tete {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom:3.5em;
+    position : relative;
+}
+
+._activite {
+    font-family: 'Verdana', monospace;
+}
+
+h1 {
+    font-family: 'Segoe UI';
+}
+
+.sous-titre {
+    max-width: 52ch;
+    color:#2c3e50;
+    font-size: 1.02rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/*  ================. STYLISATION DE CHAQUE ARTICLE  ===================*/
+
+/*  ================ LA DIV  DE LA PREMIERE ACTIVITE OEUVRE DE CHARITE =================*/
+
+.liste-evenement {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+._evenement {
+    display: grid;
+    grid-template-columns: 150px 1px 1fr;
+    background: #ffffff;
+    border: 1px solid #0f1720;
+    border-radius: 14px;
+    overflow:hidden;
+}
+
+._evenement:hover{
+    border-color: #27ae60;
+    transform: translate(-2px);
+}
+
+._date {
+    background: #27ae60;
+    color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem 0.5em;
+    text-align: center;
+    gap:0.15rem;
+}
+
+._date .jour{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 3.4rem;
+    line-height: 1;
+}
+
+._date .mois {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.14rem;
+    text-transform: uppercase;
+    color: #0f1720;
+}
+
+._date .heure{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.90rem;
+    color: #0f1720;
+    margin-top: 0.5rem;
+}
+
+._perforation{
+    background-size: 100%;
+    background-position: center;
+    background-color: #27ae60;
+}
+
+._details {
+    padding: 1.4rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap:0.55rem;
+    justify-content: center;
+}
+
+._span2 {
+    display: inline-flex;
+    align-self: flex-start;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.22rem 0.55rem;
+    border: 999px;
+    color: #0f1720;
+}
+
+._span1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #f8f9fa;
+    background: #2c3e50;
+    align-self: flex-start;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 0.1rem;
+}
+
+._span2._gastro {
+    background: #34495e;
+}
+
+._details h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 0;
+    color: #0f1720;
+}
+
+._details p {
+    margin: 0;
+    color: #0f1720;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    max-width: 56ch;
+}
+
+._meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    margin-top: 0.2rem;
+    font-size: 0.82rem;
+    color: #0f1720;
+}
+
+._meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+
+.reserver {
+    align-self: flex-start;
+    margin-top: 0.6rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.80rem;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    color: #28b76a;
+    border-bottom: 1px solid #0f1720;
+    padding-bottom: 2px;
+    transition: color 0.2s ease;
+}
+
+.reserver:hover{
+    color: #0f1720;
+}
+
+/*====================  STYLISATION DE LA DIV DE D_TOUTES LES ACTIVITES =====================*/
+
+._programme {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #27ae60;
+}
+
+._programme p{
+    margin: 0;
+    font-size: 0.85rem;
+    color: #0f1720;
+}
+
+._agenda-complet {
+    font-size: 0.78rem;
+    text-decoration: none;
+    color: #f8f9fa;
+    background: #5a6b6a;
+    padding: 0.6rem 1.1rem;
+    border-radius: 8px;
+    letter-spacing: 0.03em;
+    transition: background 0.2s ease;
+}
+
+._agenda-complet:hover{
+    background: #0f1720;
+}
