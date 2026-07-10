@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les actions et missions de l'association Avengers">
+    <title>Nos Actions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#0b1418">
+    <link rel="icon" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+    <header class="main">
+        <div class="container">
+            <a href="index.html" class="logo">Avengers</a>
+            <nav class="main-nav" aria-label="Navigation principale">
+                <ul class="links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="actions.html" class="active" aria-current="page">Nos actions</a></li>
+                    <li><a href="evenements.html">Événements</a></li>
+                    <li><a href="contact.html" class="bouton">Faire un don</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero hero-page">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <span class="hero-tag">Nos actions & missions</span>
+                    <h1>Chaque jour, nous agissons concrètement pour transformer notre territoire.</h1>
+                    <p class="lead">Découvrez nos projets en cours, nos réalisations passées et les nombreuses façons de nous soutenir.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="filters container" aria-label="Filtrer les actions">
+            <div class="filter-buttons" role="group" aria-label="Catégories d'actions">
+                <button class="filter-btn active" data-filter="all" aria-pressed="true">Toutes</button>
+                <button class="filter-btn" data-filter="solidarite" aria-pressed="false">Solidarité</button>
+                <button class="filter-btn" data-filter="ecologie" aria-pressed="false">Écologie</button>
+                <button class="filter-btn" data-filter="education" aria-pressed="false">Éducation</button>
+            </div>
+        </section>
+
+        <section class="actions-grid container">
+            <div class="grid actions-list">
+                <article class="card action-card" data-category="solidarite">
+                    <div class="card-badge solidarite">Solidarité</div>
+                    <div class="card-icon">🍽️</div>
+                    <h3>Distribution alimentaire</h3>
+                    <p>Chaque samedi matin, nous distribuons des paniers alimentaires aux familles en situation de précarité.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">📍 Ngamakosso, Talangai</span>
+                        <span class="meta-item">🗓️ Tous les samedis</span>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary card-cta">En savoir plus</a>
+                </article>
+
+                <article class="card action-card" data-category="ecologie">
+                    <div class="card-badge ecologie">Écologie</div>
+                    <div class="card-icon">🌳</div>
+                    <h3>Reboisement urbain</h3>
+                    <p>Plantation de 500 arbres et arbustes dans les espaces verts du quartier pour lutter contre les îlots de chaleur.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">📍 Ewo, Cuvette-Ouest</span>
+                        <span class="meta-item">🗓️ Mars – Juin 2026</span>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary card-cta">En savoir plus</a>
+                </article>
+
+                <article class="card action-card" data-category="education">
+                    <div class="card-badge education">Éducation</div>
+                    <div class="card-icon">📚</div>
+                    <h3>Soutien scolaire gratuit</h3>
+                    <p>Accompagnement hebdomadaire de 30 jeunes du collège au lycée dans toutes les matières principales.</p>
+                    <div class="card-meta">
+                        <span class="meta-item">📍 Complexe Scolaire Anne-Marie Javouhey</span>
+                        <span class="meta-item">🗓️ Mercredis & samedis</span>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary card-cta">En savoir plus</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container cta-content">
+                <h2>Vous voulez rejoindre l'aventure ?</h2>
+                <p class="lead">Chaque geste compte. Devenez bénévole, faites un don ou proposez une idée de projet.</p>
+                <div class="hero-ctas">
+                    <a href="contact.html" class="btn btn-primary">Devenir bénévole</a>
+                    <a href="contact.html" class="btn btn-secondary">Faire un don</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo">Avengers</a>
+                <p class="muted">© 2026 Avengers. Tous droits réservés.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Liens rapides</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="evenements.html">Événements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p class="muted">contact@avengers.example</p>
+                <p class="muted">+33 1 23 45 67 89</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
