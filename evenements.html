@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de l'association Avengers - actions et événements">
+    <title>Événements - Avengers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#0b1418">
+    <link rel="icon" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+    <header class="main">
+        <div class="container">
+            <a href="index.html" class="logo">Avengers</a>
+            <nav class="main-nav" aria-label="Navigation principale">
+                <ul class="links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="actions.html">Nos actions</a></li>
+                    <li><a href="evenements.html" class="active" aria-current="page">Événements</a></li>
+                    <li><a href="contact.html" class="bouton">Faire un don</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero hero-page">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <span class="hero-tag">Événements à venir</span>
+                    <h1>Des rendez-vous inspirants pour rassembler, agir et créer des liens.</h1>
+                    <p class="lead">Chaque événement est pensé pour mettre en valeur l’engagement citoyen, la solidarité et l’impact concret de nos actions.</p>
+                    <div class="hero-actions">
+                        <a href="#programme" class="btn btn-primary">Voir le programme</a>
+                        <a href="contact.html" class="btn btn-secondary">Participer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="evenements-preview container" id="programme" aria-labelledby="evenements-preview">
+            <h2 id="evenements-preview" class="section-title">Le programme du mois</h2>
+            <p class="section-intro">Des moments conviviaux, utiles et engagés, pensés pour faire grandir la communauté.</p>
+            <div class="event-list">
+                <article class="event-card">
+                    <div class="event-date">21 Juillet</div>
+                    <h3>Œuvre de Charité</h3>
+                    <p>Donation, rencontres solidaires et échanges autour des besoins du quartier.</p>
+                    <ul class="event-meta">
+                        <li>📍 Centre de quartier</li>
+                        <li>🕘 Début à 10h45</li>
+                    </ul>
+                </article>
+                <article class="event-card">
+                    <div class="event-date">15 Août</div>
+                    <h3>Fête de la Musique</h3>
+                    <p>Soirée musicale, animations gratuites et sensibilisation à l’engagement citoyen.</p>
+                    <ul class="event-meta">
+                        <li>📍 Esplanade du centre</li>
+                        <li>🕖 À partir de 20h00</li>
+                    </ul>
+                </article>
+                <article class="event-card">
+                    <div class="event-date">24 Septembre</div>
+                    <h3>Atelier Formation</h3>
+                    <p>Session dédiée aux bonnes pratiques de solidarité, d’éducation et d’action locale.</p>
+                    <ul class="event-meta">
+                        <li>📍 Salle de formation</li>
+                        <li>🕒 Début à 14h00</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="events-cta">
+                <a href="contact.html" class="btn btn-primary">Réserver sa place</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer-col">
+                <a href="index.html" class="logo footer-logo">Avengers</a>
+                <p class="muted">&copy; 2026 Avengers. Tous droits réservés.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Liens rapides</h4>
+                <ul class="footer-links">
+                    <li><a href="actions.html">Nos actions</a></li>
+                    <li><a href="evenements.html">Événements</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p class="muted">contact@avengers.example</p>
+                <p class="muted">+33 1 23 45 67 89</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
